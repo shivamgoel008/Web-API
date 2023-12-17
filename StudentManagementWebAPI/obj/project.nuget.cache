@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HUtb0TYw6hPKTgtoYHm4JNdtTuvzybIXI225LRjvM8fO3Y96GZjau3CzEJrvXFeQil6pkNhdibP6rANBx3G1Kw==",
+  "dgSpecHash": "CfaiDXhuknxsjEVtZhictu9KJfVFXkTME+cbL65uvgdVPV8kk9pgNAl/23aJUJfjBF/JUpQnbJnYGYeRC+NUhw==",
   "success": true,
   "projectFilePath": "/Users/shivam/Development/Visual Studio/StudentManagementWebAPI/StudentManagementWebAPI/StudentManagementWebAPI.csproj",
   "expectedPackageFiles": [
+    "/Users/shivam/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/shivam/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/shivam/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
-    "/Users/shivam/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/shivam/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/shivam/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/shivam/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/shivam/.nuget/packages/microsoft.entityframeworkcore/6.0.0/microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
