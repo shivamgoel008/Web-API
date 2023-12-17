@@ -1,15 +1,15 @@
-﻿<Properties StartupConfiguration="{AD344907-461E-4FCE-86B7-43CC82518C15}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.StudentManagementWebAPI FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{AD344907-461E-4FCE-86B7-43CC82518C15}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentManagementWebAPI/appsettings.json">
+    <Files>
+      <File FileName="StudentManagementWebAPI/appsettings.json" Line="3" Column="22" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="StudentManagementWebAPI" expanded="True" selected="True">
-            <Node name="StudentManagementWebAPI" expanded="True">
+          <Node name="StudentManagementWebAPI">
+            <Node name="StudentManagementWebAPI">
               <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
@@ -19,4 +19,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.StudentManagementWebAPI FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
