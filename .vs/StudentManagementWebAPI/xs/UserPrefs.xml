@@ -1,26 +1,35 @@
 ﻿<Properties StartupConfiguration="{AD344907-461E-4FCE-86B7-43CC82518C15}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StudentManagementWebAPI/appsettings.json">
+  <MonoDevelop.Ide.ItemProperties.StudentManagementWebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentManagementWebAPI/Models/StudentDBContext.cs">
     <Files>
-      <File FileName="StudentManagementWebAPI/appsettings.json" Line="3" Column="22" />
+      <File FileName="StudentManagementWebAPI/Repository/IStudentRepository.cs" Line="10" Column="20" />
+      <File FileName="StudentManagementWebAPI/Controllers/StudentController.cs" Line="33" Column="19" />
+      <File FileName="StudentManagementWebAPI/ServiceLayerModels/Student.cs" Line="8" Column="32" />
+      <File FileName="StudentManagementWebAPI/Repository/StudentRepository.cs" Line="21" Column="47" />
+      <File FileName="StudentManagementWebAPI/Models/StudentDBContext.cs" Line="8" Column="54" />
+      <File FileName="StudentManagementWebAPI/Models/Student.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="StudentManagementWebAPI">
+          <Node name="StudentManagementWebAPI" expanded="True">
             <Node name="StudentManagementWebAPI">
               <Node name="Controllers" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="StudentDBContext.cs" selected="True" />
+              </Node>
+              <Node name="Repository" expanded="True" />
+              <Node name="ServiceLayerModels" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.StudentManagementWebAPI FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

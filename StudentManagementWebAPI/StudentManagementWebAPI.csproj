@@ -20,8 +20,10 @@
 
   <ItemGroup>
     <None Remove="Repository\" />
+    <None Remove="ServiceLayerModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repository\" />
+    <Folder Include="ServiceLayerModels\" />
   </ItemGroup>
 </Project>
