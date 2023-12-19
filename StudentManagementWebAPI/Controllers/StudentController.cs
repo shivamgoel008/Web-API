@@ -38,6 +38,23 @@ namespace StudentManagementWebAPI.Controllers
             Student response = await studentRepository.AddStudent(student);
             return Ok(response);
         }
+        [HttpPut]
+        [Route("[controller]/{studentId:guid}")]
+        public async Task<IActionResult> UpdateStudentAsync([FromRoute] Guid studentId, [FromBody] StudentSL request)
+        {
+            if (await studentRepository.CheckStudentId(studentId))
+            {
+                var updatedStudent = await studentRepository.UpdateStudent(studentId, request);
+                if (updatedStudent != null)
+                {
+                    return Ok(updatedStudent);
+                }
+
+            }
+
+            return NotFound();
+
+        }
     }
 }
 

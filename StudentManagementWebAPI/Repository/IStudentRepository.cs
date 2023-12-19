@@ -8,6 +8,8 @@ namespace StudentManagementWebAPI.Repository
     {
         Task<List<Student>> GetAllStudentsAsync();
         Task<Student> AddStudent(StudentSL student);
+        Task<bool> CheckStudentId(Guid studentId);
+        Task<Student> UpdateStudent(Guid id, StudentSL student);
     }
 }
 
