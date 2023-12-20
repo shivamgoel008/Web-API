@@ -48,7 +48,12 @@ namespace StudentManagementWebAPI.Repository
 
         public async Task<Student> UpdateStudent(Guid id, StudentSL student)
         {
-            var studentDto = await context.Students.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var studentDto = new Student();
+            using (var contextNew = new StudentDBContext())
+            {
+                studentDto = await contextNew.Students.Where(x => x.Id == id).FirstOrDefaultAsync();
+            }
+
             studentDto.FirstName = string.IsNullOrEmpty(student.FirstName) ? studentDto.FirstName : student.FirstName;
             studentDto.LastName = string.IsNullOrEmpty(student.LastName) ? studentDto.LastName : student.LastName;
             studentDto.DateOfBirth = string.IsNullOrEmpty(student.DateOfBirth.ToString()) ? studentDto.DateOfBirth : student.DateOfBirth;

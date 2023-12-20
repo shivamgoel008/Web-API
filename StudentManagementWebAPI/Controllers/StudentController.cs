@@ -42,8 +42,10 @@ namespace StudentManagementWebAPI.Controllers
         [Route("[controller]/{studentId:guid}")]
         public async Task<IActionResult> UpdateStudentAsync([FromRoute] Guid studentId, [FromBody] StudentSL request)
         {
-            if (await studentRepository.CheckStudentId(studentId))
+            bool check = await studentRepository.CheckStudentId(studentId);
+            if (check) 
             {
+
                 var updatedStudent = await studentRepository.UpdateStudent(studentId, request);
                 if (updatedStudent != null)
                 {
