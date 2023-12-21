@@ -10,6 +10,7 @@ namespace StudentManagementWebAPI.Repository
         Task<Student> AddStudent(StudentSL student);
         Task<bool> CheckStudentId(Guid studentId);
         Task<Student> UpdateStudent(Guid id, StudentSL student);
+        Task<Student> DeleteStudent(Guid studentId);
     }
 }
 
