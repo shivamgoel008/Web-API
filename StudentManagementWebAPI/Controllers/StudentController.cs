@@ -38,24 +38,35 @@ namespace StudentManagementWebAPI.Controllers
             Student response = await studentRepository.AddStudent(student);
             return Ok(response);
         }
+
         [HttpPut]
         [Route("[controller]/{studentId:guid}")]
         public async Task<IActionResult> UpdateStudentAsync([FromRoute] Guid studentId, [FromBody] StudentSL request)
         {
             bool check = await studentRepository.CheckStudentId(studentId);
-            if (check) 
+            if (check)
             {
-
                 var updatedStudent = await studentRepository.UpdateStudent(studentId, request);
                 if (updatedStudent != null)
                 {
                     return Ok(updatedStudent);
                 }
+            }
+            return NotFound();
+        }
 
+        [HttpDelete]
+        [Route("[controller]/{studentId:guid}")]
+        public async Task<IActionResult> DeleteStudentAsync([FromRoute] Guid studentId)
+        {
+            bool check = await studentRepository.CheckStudentId(studentId);
+            if (check)
+            {
+                var student = await studentRepository.DeleteStudent(studentId);
+                return Ok(student);
             }
 
             return NotFound();
-
         }
     }
 }

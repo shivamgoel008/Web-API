@@ -53,7 +53,6 @@ namespace StudentManagementWebAPI.Repository
             {
                 studentDto = await contextNew.Students.Where(x => x.Id == id).FirstOrDefaultAsync();
             }
-
             studentDto.FirstName = string.IsNullOrEmpty(student.FirstName) ? studentDto.FirstName : student.FirstName;
             studentDto.LastName = string.IsNullOrEmpty(student.LastName) ? studentDto.LastName : student.LastName;
             studentDto.DateOfBirth = string.IsNullOrEmpty(student.DateOfBirth.ToString()) ? studentDto.DateOfBirth : student.DateOfBirth;
@@ -68,8 +67,22 @@ namespace StudentManagementWebAPI.Repository
             context.Students.Update(studentDto);
             context.SaveChanges();
             return studentDto;
-
         }
+        public async Task<Student> DeleteStudent(Guid studentId)
+        {
+            using (var contextDb= new StudentDBContext())
+            {
+                var student = await contextDb.Students.Where(x => x.Id == studentId).FirstOrDefaultAsync();
+                if (student != null)
+                {
+                    contextDb.Students.Remove(student);
+                    await context.SaveChangesAsync();
+                    return student;
+                }
+                return null;
+            }
+        }
+
     }
 }
 
